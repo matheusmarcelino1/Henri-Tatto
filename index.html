@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+  <link rel="stylesheet" href="_modal.scss" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+
+
+  <title> Henrique Tattoo </title>
+</head>
+
+<body style="background-color: black;">
+
+  <div id="container" class="container-fluid">
+
+    <header class="row ">
+
+
+      <nav class="col-lg-12 col-12  navbar navbar-expand-md bg-black fixed-top">
+
+
+        <figure id="logo" class="col-lg-3">
+          <a href="#banner">
+          <img src="imagens/logo_henrique.png" style="padding-top: 15px; ;" alt="logotipo"> 
+        </a>
+        </figure>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse col-lg-9 teste2" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#banner">Home</a>
+            </li>
+            <li class="nav-item" style="width: 150px;">
+              <a class="nav-link" href="#galeria">Meus Trabalhos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#comentarios">Comentários</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#localizacao">Localização</a>
+            </li>
+           
+
+          
+         
+            <li id="instagram" >
+              <a href="https://www.instagram.com/henriitattoo/" 
+                 target="_blank">
+                <i class="fa fa-instagram text-center"
+                  style="color:white;font-size: 36px; ">
+                </i> 
+              </a>
+            </li>
+
+            <li id="whatsapp" >
+              <a href="https://wa.me/5511977540253" target="_blank"><i class="fa fa-whatsapp text-center"
+                  style="color:white;font-size: 36px; padding-left: 10px;"></i> </a>
+            </li>
+     
+         
+
+          </ul>
+        </div>
+        
+      </nav>
+
+    </header>
+
+
+
+    <!--AREA DO BANNER-->
+
+
+
+    <section id="banner" class="container-fluid text-center mb-5 pb-5">
+
+
+      
+        <div style="padding-top: 180px;">
+          <h1>
+            Sejam Bem-vindos! 
+          </h1>
+        </div>
+      </div>
+
+
+  
+
+  
+
+    </section>
+
+
+    <!--FECHAMENTO DO BANNER-->
+
+
+
+    <!--AREA DA GALERIA-->
+
+
+
+    <div id="galeria">
+
+      <section id="section1" class="row galeria">
+
+        <figure id="tattoo1" class="col-lg-3 col-sm-6 col-6 text-center">
+          <img class="" onclick="openModal();currentSlide(1)" src="imagens/Imagens-site/foto-1.png"
+            alt="tatuagem de um tigre">
+        </figure>
+
+        <figure class="col-lg-3 col-sm-6 col-6 text-center">
+          <img onclick="openModal();currentSlide(2)" src="imagens/Imagens-site/foto-2.png" alt="tatuagem dupla">
+        </figure>
+
+        <figure class="col-lg-3 col-sm-6 col-6 text-center">
+          <img onclick="openModal();currentSlide(3)" src="imagens/Imagens-site/foto-4.png"
+            alt="tatuagem de uma caveira">
+        </figure>
+
+        <figure class="col-lg-3 col-sm-6 col-6 text-center">
+          <img onclick="openModal();currentSlide(4)" src="imagens/Imagens-site/foto-5.png"
+            alt="tatuagem de patas de pets">
+        </figure>
+
+      </section>
+
+
+      <section id="section2" class="row galeria">
+
+        <figure class="col-lg-3 col-sm-6 col-6 text-center">
+          <img onclick="openModal();currentSlide(5)" src="imagens/Imagens-site/foto-6.png"
+            alt="tatuagem da palavra resilencia" class=" img-fluid">
+        </figure>
+        <figure class="col-lg-3 col-sm-6 col-6 text-center">
+          <img onclick="openModal();currentSlide(6)" src="imagens/Imagens-site/foto-7.png"
+            alt="tatuagem do triangulo do Harry Potter" class=" img-fluid">
+        </figure>
+        <figure class="col-lg-3 col-sm-6 col-6 text-center">
+          <img onclick="openModal();currentSlide(7)" src="imagens/Imagens-site/foto-8.png"
+            alt="tatuagem de um leao com algumas plantas" class=" img-fluid">
+        </figure>
+        <figure class="col-lg-3 col-sm-6 col-6 text-center">
+          <img onclick="openModal();currentSlide(8)" src="imagens/Imagens-site/foto-9.png"
+            alt="tatuagem de um coracao pontilhado com duas patas" class=" img-fluid">
+        </figure>
+
+      </section>
+
+      <span id="dots"></span>
+
+      <div class="text-center">
+
+        <button
+          style="text-align: center; text-decoration: none; background-color: rgb(0, 0, 0); color: white; padding-bottom: 20px; font-size: 17px;"
+          onclick="myFunction()" id="myBtn">
+          Ver mais
+        </button>
+
+      </div>
+
+      <span id="more">
+
+        <div class="linha_tres">
+
+          <section id="" class="row galeria ocultar ">
+
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(9)" src="imagens/Imagens-site/foto-11.png"
+                alt="tatuagem de uma flor" class=" img-fluid hover-shadow">
+            </figure>
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(10)" src="imagens/Imagens-site/foto-12.png"
+                alt="tatuagem de uma caveira com uma sombra" class=" img-fluid">
+            </figure>
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(11)" src="imagens/Imagens-site/foto-13.png"
+                alt="tatuagem da frase em ingles be brave" class=" img-fluid">
+            </figure>
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(12)" src="imagens/Imagens-site/foto-14.png"
+                alt="tatuagem de um leão com algumas listras" class=" img-fluid">
+            </figure>
+
+          </section>
+
+
+
+          <section id="section4" class="row galeria ocultar">
+
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(13)" src="imagens/Imagens-site/foto-15.png"
+                alt="tatuagem de um tigre rugindo" class=" img-fluid">
+            </figure>
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(14)" src="imagens/Imagens-site/foto-16.png"
+                alt="tatuagem de um floral da volta no braco" class=" img-fluid">
+            </figure>
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(15)" src="imagens/Imagens-site/foto-17.png"
+                alt="tatuagem de uma menina com lobo" class=" img-fluid">
+            </figure>
+            <figure class="col-lg-3 col-sm-6 col-6 text-center">
+              <img onclick="openModal();currentSlide(16)" src="imagens/Imagens-site/foto-18.png"
+                alt="tatuagem de um floral" class=" img-fluid">
+            </figure>
+
+          </section>
+
+        </div>
+
+        <section id="section5" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(17)" src="imagens/Imagens-site/foto-19.png"
+              alt="tatuagem de uma tartaruga" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(18)" src="imagens/Imagens-site/foto-20.png"
+              alt="tatuagem da face de um tigre" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(19)" src="imagens/Imagens-site/foto-21.png"
+              alt="tatuagem de um elmo espartano com uma espada" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(20)" src="imagens/Imagens-site/foto-22.png"
+              alt="tatuagem de duas borboletas" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section6" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(21)" src="imagens/Imagens-site/foto-23.png"
+              alt="tatuagem de um cachorro filhote" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(22)" src="imagens/Imagens-site/foto-24.png"
+              alt="tatuagem de uma cobra com um floral" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(23)" src="imagens/Imagens-site/foto-25.png"
+              alt="tatuagem de um lobo com uma paisagem" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(24)" src="imagens/Imagens-site/foto-26.png"
+              alt="tatuagem de uma abelha" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section7" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(25)" src="imagens/Imagens-site/foto-27.png"
+              alt="tatuagem de um bulldog fraces" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(26)" src="imagens/Imagens-site/foto-28.png"
+              alt="tatuagem de uma cobra" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(27)" src="imagens/Imagens-site/foto-29.png"
+              alt="tatuagem de um floral maior" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(28)" src="imagens/Imagens-site/foto-30.png"
+              alt="tatuagem de um floral com uma borboleta" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section8" class="row galeria ocultar">
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(29)" src="imagens/Imagens-site/foto-31.png"
+              alt="tatuagem de um tigre embaixo de algumas plantas" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(30)" src="imagens/Imagens-site/foto-32.png"
+              alt="tatuagem de leao com uma sombra atras" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(31)" src="imagens/Imagens-site/foto-33.png"
+              alt="tatuagem de duas digitais formando um coracao" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(32)" src="imagens/Imagens-site/foto-34.png"
+              alt="tatuagem de uma frase" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section9" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(33)" src="imagens/Imagens-site/foto-35.png"
+              alt="tatuagem da pintura da criacao de adao" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(34)" src="imagens/Imagens-site/foto-55.png"
+              alt="tatuagem de tres borboletas" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(35)" src="imagens/Imagens-site/foto-37.png"
+              alt="tatuagem de um escorpiao" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(36)" src="imagens/Imagens-site/foto-38.png"
+              alt="tatuagem da frase em ingles alt er love" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section10" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(37)" src="imagens/Imagens-site/foto-39.png"
+              alt="tatuagem dos anos de nascimento dos pais" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(38)" src="imagens/Imagens-site/foto-40.png"
+              alt="tatuagem da contecao de sagitario" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(39)" src="imagens/Imagens-site/foto-41.png"
+              alt="tatuagem de um cachorro" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(40)" src="imagens/Imagens-site/foto-42.png"
+              alt="tatuagem do simba, timao e pumba" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section11" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(41)" src="imagens/Imagens-site/foto-43.png"
+              alt="tatuagem dos olhos de um tigre" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(42)" src="imagens/Imagens-site/foto-44.png"
+              alt="tatuagem de uma crianca com um balao" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(43)" src="imagens/Imagens-site/foto-45.png"
+              alt="tatuagem de uma aguia" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(44)" src="imagens/Imagens-site/foto-46.png"
+              alt="tatuagem metade estatua e uma caveira" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section12" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(45)" src="imagens/Imagens-site/foto-47.png"
+              alt="tatuagem de um cupido atirando uma flecha" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(46)" src="imagens/Imagens-site/foto-48.png"
+              alt="tatuagem de dois cachorros" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(47)" src="imagens/Imagens-site/foto-49.png"
+              alt="tatuagem de uma flor" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(48)" src="imagens/Imagens-site/foto-50.png"
+              alt="tatuagem de um soldado e coliseu" class=" img-fluid">
+          </figure>
+
+        </section>
+
+        <section id="section13" class="row galeria ocultar">
+
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(49)" src="imagens/Imagens-site/foto-51.png"
+              alt="tatuagem de dois cachorros" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(50)" src="imagens/Imagens-site/foto-52.png"
+              alt="tatuagem de uma frase em frances" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(51)" src="imagens/Imagens-site/foto-53.png"
+              alt="tatuagem de um mapa  uma bussola" class=" img-fluid">
+          </figure>
+          <figure class="col-lg-3 col-sm-6 col-6 text-center">
+            <img onclick="openModal();currentSlide(52)" src="imagens/Imagens-site/foto-54.png"
+              alt="tatuagem de um floral" class=" img-fluid">
+          </figure>
+
+      </span>
+
+      </section>
+
+
+    </div>
+
+    <!--FECHAMENTO DA GALERIA-->
+
+
+
+ 
+    <!--AREA DO MODAL-->
+
+
+
+    <div id="myModal" class="modal" style="background-color: rgba(0,0,0,0.8);">
+      <span id="fechar" class="close cursor" onclick="closeModal()">&times;</span>
+
+      <div class="modal-content" style="background-color: rgba(0,0,0,0)">
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-1.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-2.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-4.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-5.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-6.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-7.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-8.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-9.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-11.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-12.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-13.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-14.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-15.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-16.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-17.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-18.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-19.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-20.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-21.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-22.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-23.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-24.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-25.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-26.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-27.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-28.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-29.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-30.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-31.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-32.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-33.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-34.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-35.png" style="width:50%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-55.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-37.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-38.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-39.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-40.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-41.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-42.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-43.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-44.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-45.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-46.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-47.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-48.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-49.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-50.png" style="width: 50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-51.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-52.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-53.png" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <img src="imagens/Imagens-site/foto-54.png" style="width: 50%">
+        </div>
+
+     
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+      </div>
+
+
+    </div>
+
+
+    <!--FECHAMENTO DO MODAL-->
+
+
+
+
+
+    <!--AREA DOS COMENTARIOS-->
+
+
+       <section id="comentarios" class="row">
+
+        <div class= "col-lg-12">
+         <div class="depoimentos" class= " text-center" style="font-family: Arial, Helvetica, sans-serif ;"> 
+            <h1>
+               <strong> 
+                 Depoimentos dos clientes
+                 </strong> 
+                </h1>
+                <h2 style="font-size: 20px; opacity: 0.7;">
+                  (Comentários retirados de redes sociais)
+                </h2>
+
+
+
+         </div>
+        </div>
+      
+      
+            <div class="container teste">
+               <div class="row text-center ">
+                  <div class="col-lg-4">
+                     <div class="fundo" class="m-3 p-3 text-light border ">
+                        <p> "Me considero um cara bastante exigente em relação a 
+                          tatuagens, pois aquilo irá ficar na sua pele pra vida 
+                          inteira. O Henrique é um tatuador extremamente 
+                          perfeccionista e consegue se superar cada vez mais.
+                          Não é minha primeira tattoo com ele e nem será a 
+                          última. Já estou querendo marcar meu fechamento de 
+                          braço com ele  "
+                            <h4> -Danilo Bernardes </h4>
+                          </p>
+                        </div>
+                       </div> 
+      
+                      <div class="col-lg-4 ">
+                         <div class="fundo" class="m-3 p-3 bg-dark text-light border">
+                            <p> 
+                              "Minha primeira tatuagem foi com o Henrique, super recomendo!!!
+                              Quero agradecer pela experiência fornecida na hora de fazer a
+                              tattoo  S2 "
+                               <h4> -Beatriz Teixeira </h4> 
+                              </p>
+                               </div> 
+                              </div>
+                              
+                              <div class="col-lg-4">
+                                <div class="fundo" class="m-3 p-3 bg-dark text-light border">
+                                   <p> "Você é o cara Henrique!!
+                                     Obrigado pelo cuidado e o carinho na hora de fazer
+                                     meu projeto e minha tattoo. O que me deixou mais 
+                                     satisfeito foi ver seu cuidado e sua higiene antes
+                                     de começar o processo da tattoo. 
+                                     Trabalho impecável.
+                                     Parabéns e muito sucesso!! "
+      
+                                       <h4> -Rogério Crizan </h4>
+                                      </p>
+                                       </div>
+                                      </div>
+                                    </div>
+                                   </div>
+
+
+            
+                        
+
+                                  
+      </section>
+
+
+
+
+
+
+
+    <!--FECHAMENTO DOS COMENTARIOS-->
+
+
+
+
+    <section id="localizacao" class="row text-center" style="padding-bottom: 100px;">
+
+      <div class="col-lg-6" style="text-align: center; padding-top: 125px; border: black;">
+
+        <h1 style="padding-bottom: 20px;">Siga minha localização:</h1>
+
+        <h2 style="font-size: 23px;">Endereço: Rua Godofredo Furtado n°11 - Tucuruvi - SP</h2>
+        <h2 style="font-size: 23px;">Contato: 11 97754-0253</h2>
+        <h2 style="font-size: 23px;">Email: henriquetattoo@hotmail.com</h2>
+
+
+      </div>
+
+
+
+      <div class="col-lg-6" style="padding-right: 150px;">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.8720855348773!2d-46.605300479831676!3d-23.4789137223908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7868939a40f%3A0x2f9444e5bf045134!2sTatuaria%20011!5e0!3m2!1spt-BR!2sbr!4v1652124370416!5m2!1spt-BR!2sbr"
+          width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+      </div>
+
+
+
+
+    </section>
+
+    <footer class="row text-center" style="background-color: black; color: white; padding-top: 30px;padding-bottom: 30px;">
+
+      <div id="direitos" class="col-lg-6">
+        <p>Henrique Tattoo - Todos os direitos reservados - 2022</p>
+      </div>
+
+
+      <div id="rs" class="col-lg-6">
+
+        <a href="https://www.instagram.com/henriitattoo/" 
+        target="_blank">
+       <i class="fa fa-instagram text-center"
+         style="color:white;font-size: 36px; ">
+       </i> 
+       </a>
+
+       <a href="https://wa.me/5511977540253" target="_blank"><i class="fa fa-whatsapp text-center"
+        style="color:white;font-size: 36px; padding-left: 10px;"></i> </a>
+
+     
+
+      </div>
+
+
+
+    </footer>
+
+
+    <!--SCRIPT DO MODAL-->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Ver mais";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Ver menos";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+
+
+  </div>
+
+</body>
+
+</html>
